@@ -20,4 +20,7 @@ pub enum HashFunction {
     /// MD4 hash function
     #[cfg(feature = "md4_hash")]
     MD4,
+    /// Blake3 hash function
+    #[cfg(feature = "blake3_hash")]
+    Blake3,
 }

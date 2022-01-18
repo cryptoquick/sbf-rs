@@ -73,6 +73,8 @@ where
             HashFunction::MD5 => md5_compute(buff).to_vec(),
             #[cfg(feature = "md4_hash")]
             HashFunction::MD4 => md4::Md4::digest(buff).to_vec(),
+            #[cfg(feature = "blake3_hash")]
+            HashFunction::Blake3 => blake3::hash(buff).as_bytes().to_vec(),
         }
     }
 
