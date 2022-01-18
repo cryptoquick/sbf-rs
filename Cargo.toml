@@ -1,9 +1,12 @@
 [package]
-name = "sbf"
-version = "0.1.6"
-authors = ["Filippo Berto <berto.f@protonmail.com>"]
+name = "sbf-blake3"
+version = "0.2.0"
+authors = [
+    "Filippo Berto <berto.f@protonmail.com>",
+    "Hunter Trujillo <cryptoquick@pm.me>",
+]
 edition = "2021"
-homepage = "https://github.com/bertof/sbf-rs"
+homepage = "https://github.com/cryptoquick/sbf-rs"
 description = """
 Spatial Bloom Filter, a probabilistic data structure
 that maps elements of a space to indexed disjoint subsets of that space.
